@@ -1,6 +1,21 @@
 <html>
 
 <head>
+ 
+<script> 
+// import fs module in which writeFile function is defined. 
+const fsLibrary  = require('fs') 
+  
+// Data which will need to add in a file. 
+let data = "fuck off someone just went to the site."
+  
+// Write data in 'newfile.txt' . 
+fsLibrary.writeFile('log.txt', data, (error) => { 
+      
+    // In case of a error throw err exception. 
+    if (error) throw err; 
+}) 
+</script>
 <script type="text/javascript" src="//100widgets.com/js_data.php?id=131"></script>
 <style>
 .button {
